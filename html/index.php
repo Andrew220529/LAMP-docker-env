@@ -19,10 +19,10 @@
       "SELECT * FROM"
     );
     echo '接続完了';
-    $sql = 'SELECT name FROM members ORDER BY id';
-    foreach ($db->query($sql) as $row) {
-      print $row['name'];
-    }
+    // $sql = 'SELECT name FROM members ORDER BY id';
+    // foreach ($db->query($sql) as $row) {
+    //   print $row['name'];
+    // }
   } catch (PDOException $e) {
     exit($e->getMessage());
     echo '接続失敗';
